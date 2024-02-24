@@ -45,7 +45,8 @@
   cursor: pointer;
 }
 
-.nav .donate-btn button {
+.nav .donate-btn button,
+.hero .content button {
   outline: none;
   border: none;
   background: var(--safron);
@@ -55,6 +56,43 @@
   border-radius: 5px;
 }
 
+/* hero section style */
+.hero {
+  max-width: 75%;
+  min-height: 600px;
+  margin: 0 auto;
+  background-color: #019147;
+  background: url(img/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+}
+
+.hero .content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero .content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffff;
+}
+.hero .content p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffff;
+  margin: 15px 0;
+}
+
+.hero .content button {
+  max-width: 200px;
+}
 /* responsive */
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
