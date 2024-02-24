@@ -15,7 +15,7 @@
 /* navber style */
 
 .nav {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -31,14 +31,15 @@
   height: 100px;
 }
 .nav .logo h2 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
 }
 
 .nav .items ul {
   list-style: none;
   color: var(gray);
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 500;
   display: flex;
   gap: 25px;
   cursor: pointer;
@@ -51,5 +52,5 @@
   color: #ffff;
   font-size: 16px;
   padding: 10px 15px;
-  border-radius: 8px;
+  border-radius: 5px;
 }
