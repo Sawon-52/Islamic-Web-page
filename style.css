@@ -1,0 +1,55 @@
+:root {
+  --green: #019147;
+  --safron: #ff9822;
+  --black: #121413;
+  --gray: #646464;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navber style */
+
+.nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .logo {
+  display: flex;
+  align-items: center;
+}
+.nav .logo img {
+  width: 100px;
+  height: 100px;
+}
+.nav .logo h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nav .items ul {
+  list-style: none;
+  color: var(gray);
+  font-size: 15px;
+  display: flex;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.nav .donate-btn button {
+  outline: none;
+  border: none;
+  background: var(--safron);
+  color: #ffff;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
