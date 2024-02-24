@@ -58,11 +58,10 @@
 
 /* hero section style */
 .hero {
-  max-width: 75%;
+  max-width: 73%;
   min-height: 600px;
-  margin: 0 auto;
-  background-color: #019147;
-  background: url(img/banner.png);
+  margin: 30px auto;
+  background: linear-gradient(90deg, #019147 0%, rgba(0, 95, 172, 0) 100%), url(img/banner.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -93,6 +92,7 @@
 .hero .content button {
   max-width: 200px;
 }
+
 /* responsive */
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -103,6 +103,18 @@
   }
   .nav .items ul {
     display: none;
+  }
+
+  /* hero section */
+  .hero {
+    max-width: 100%;
+    padding: 5px 5px;
+    margin: 10px 10px;
+    padding: 0 30px;
+  }
+
+  .hero .content {
+    width: 100%;
   }
 }
 
@@ -116,6 +128,18 @@
   .nav .items ul {
     margin-bottom: 20px;
   }
+
+  /* hero section */
+  .hero {
+    max-width: 80%;
+    padding: 5px 5px;
+    padding: 0 70px;
+    margin-top: 30px;
+  }
+
+  .hero .content {
+    width: 100%;
+  }
 }
 
 /* // Medium devices (tablets, less than 992px) */
@@ -128,14 +152,38 @@
   .nav .items ul {
     margin-bottom: 20px;
   }
+
+  /* hero section */
+  .hero {
+    max-width: 80%;
+    padding: 5px 5px;
+    padding: 0 70px;
+    margin-top: 30px;
+  }
+
+  .hero .content {
+    width: 100%;
+  }
 }
 
 /* // Large devices (desktops, less than 1200px) */
 @media (min-width: 991.98px) and (max-width: 1199.98px) {
   /* navber responsive */
   .nav {
-    width: 100%;
+    width: 95%;
     padding: 0 10px;
+  }
+
+  /* hero section */
+  .hero {
+    max-width: 97%;
+    padding: 5px 5px;
+    padding: 0 70px;
+    margin-top: 30px;
+  }
+
+  .hero .content {
+    width: 100%;
   }
 }
 
@@ -143,7 +191,19 @@
 @media (min-width: 1199.98px) and (max-width: 1399.98px) {
   /* navber responsive */
   .nav {
-    width: 90%;
+    width: 80%;
     padding: 0 10px;
+  }
+
+  /* hero section */
+  .hero {
+    max-width: 85%;
+    padding: 5px 5px;
+    padding: 0 70px;
+    margin-top: 30px;
+  }
+
+  .hero .content {
+    width: 100%;
   }
 }
