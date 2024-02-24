@@ -113,7 +113,7 @@
   justify-content: space-between;
 }
 .pray-container .pray-title > h3 {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 700;
   color: var(--black);
 }
@@ -141,18 +141,18 @@
 }
 
 .pray-container .masjid-container .masjid {
-  max-width: 40%;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-top: 80px;
 }
 .pray-container .masjid-container .masjid > h3 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
 }
 .pray-container .masjid-container .masjid p {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
 }
 
@@ -449,14 +449,14 @@ td {
   }
 
   .pray-container .masjid-container {
-    max-width: 95%;
+    max-width: 85%;
     gap: 30px;
     padding: 10px 0;
   }
 
   .pray-container .masjid-container .masjid {
     max-width: 100%;
-    margin-top: 30px;
+    margin-top: 80px;
     padding: 0 20px;
   }
   .pray-container .masjid-container .prayer-time {
