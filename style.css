@@ -425,6 +425,24 @@ td {
     width: 100%;
     min-height: 400px;
   }
+
+  /* services section responsive */
+  .service {
+    flex-direction: column;
+    max-width: 95%;
+    padding: 20px 30px;
+  }
+
+  .service .service-title {
+    width: 100%;
+  }
+
+  .service .service-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .service .service-content .service1 {
+    max-width: 100%;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -501,6 +519,24 @@ td {
     width: 100%;
     min-height: 400px;
   }
+
+  /* services section responsive */
+  .service {
+    flex-direction: column;
+    max-width: 95%;
+    padding: 20px 30px;
+  }
+
+  .service .service-title {
+    width: 100%;
+  }
+
+  .service .service-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service .service-content .service1 {
+    max-width: 100%;
+  }
 }
 
 /* // Medium devices (tablets, less than 992px) */
@@ -564,6 +600,24 @@ td {
     width: 100%;
     min-height: 400px;
   }
+
+  /* services section responsive */
+  .service {
+    flex-direction: column;
+    max-width: 95%;
+    padding: 20px 30px;
+  }
+
+  .service .service-title {
+    width: 100%;
+  }
+
+  .service .service-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service .service-content .service1 {
+    max-width: 100%;
+  }
 }
 
 /* // Large devices (desktops, less than 1200px) */
@@ -624,6 +678,24 @@ td {
     left: 50px;
     top: -50px;
   }
+
+  /* services section responsive */
+  .service {
+    /* flex-direction: column; */
+    max-width: 95%;
+    padding: 20px 30px;
+  }
+
+  .service .service-title {
+    width: 100%;
+  }
+
+  .service .service-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service .service-content .service1 {
+    max-width: 100%;
+  }
 }
 
 /* // X-Large devices (large desktops, less than 1400px) */
@@ -682,5 +754,12 @@ td {
     min-height: 400px;
     left: 50px;
     top: -50px;
+  }
+
+  /* services section responsive */
+  .service {
+    /* flex-direction: column; */
+    max-width: 85%;
+    padding: 20px 30px;
   }
 }
