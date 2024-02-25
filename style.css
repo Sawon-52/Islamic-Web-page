@@ -15,7 +15,7 @@
 /* navber style */
 
 .nav {
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -49,7 +49,8 @@
 
 .nav .donate-btn button,
 .hero .content button,
-.pray-container .masjid button {
+.pray-container .masjid button,
+.pray-container .know .know-title button {
   outline: none;
   border: none;
   background: var(--safron);
@@ -70,7 +71,7 @@
   background-position: center;
   background-size: cover;
   border-radius: 10px;
-  padding: 0 100px;
+  padding: 0 80px;
   display: flex;
   align-items: center;
 }
@@ -103,11 +104,8 @@
   padding: 30px 0;
 }
 
-.pray-main {
-  margin: 0 auto;
-}
 .pray-container .pray-title {
-  max-width: 70%;
+  max-width: 65%;
   margin: 40px auto;
   display: flex;
   justify-content: space-between;
@@ -137,7 +135,8 @@
   margin-top: 30px;
   background: #ffff;
   border-radius: 8px;
-  padding-left: 50px;
+  padding: 0 100px;
+  gap: 20px;
 }
 
 .pray-container .masjid-container .masjid {
@@ -152,8 +151,10 @@
   font-weight: 600;
 }
 .pray-container .masjid-container .masjid p {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
+  color: var(--gray);
+  text-align: justify;
 }
 
 .pray-container .masjid-container .masjid button {
@@ -210,6 +211,64 @@ td {
 .pray-container .masjid-container .prayer-time table tr td img {
   max-width: 30px;
   min-height: 30px;
+}
+
+/* get to know section */
+.pray-container .know {
+  width: 75%;
+  margin: 0 auto;
+  background: #ffff;
+  border-radius: 8px;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 200px;
+  position: relative;
+}
+
+.pray-container .know .know-video {
+  width: 40%;
+  min-height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: url(img/masjid.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* transform: scale(1.5); */
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: -100px;
+  left: 100px;
+}
+.pray-container .know .know-video i {
+  font-size: 70px;
+  color: var(--safron);
+  background: #ffff;
+  border-radius: 50%;
+}
+
+.pray-container .know .know-title {
+  width: 50%;
+}
+.pray-container .know .know-title h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--black);
+}
+.pray-container .know .know-title p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray);
+  margin: 30px 0px;
+  text-align: justify;
+}
+
+.pray-container .know .know-title button {
+  max-width: 150px;
 }
 
 /* responsive */
@@ -275,6 +334,23 @@ td {
     padding: 0 10px;
     gap: 2px;
   }
+
+  /* know section responsive */
+  .pray-container .know {
+    width: 95%;
+    padding: 20px 20px;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+  .pray-container .know .know-title {
+    width: 100%;
+  }
+
+  .pray-container .know .know-video {
+    position: static;
+    width: 100%;
+    min-height: 400px;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -334,6 +410,23 @@ td {
     padding: 0 10px;
     gap: 2px;
   }
+
+  /* know section responsive */
+  .pray-container .know {
+    width: 95%;
+    padding: 20px 20px;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+  .pray-container .know .know-title {
+    width: 100%;
+  }
+
+  .pray-container .know .know-video {
+    position: static;
+    width: 100%;
+    min-height: 400px;
+  }
 }
 
 /* // Medium devices (tablets, less than 992px) */
@@ -380,6 +473,23 @@ td {
   .pray-container .masjid-container .prayer-time {
     width: 100%;
   }
+
+  /* know section responsive */
+  .pray-container .know {
+    width: 95%;
+    padding: 20px 20px;
+    /* flex-direction: column-reverse; */
+    margin-top: 50px;
+  }
+  .pray-container .know .know-title {
+    width: 100%;
+  }
+
+  .pray-container .know .know-video {
+    position: static;
+    width: 100%;
+    min-height: 400px;
+  }
 }
 
 /* // Large devices (desktops, less than 1200px) */
@@ -421,6 +531,25 @@ td {
   .pray-container .masjid-container .prayer-time {
     width: 100%;
   }
+
+  /* know section responsive */
+  .pray-container .know {
+    width: 95%;
+    padding: 20px 20px;
+    /* flex-direction: column-reverse; */
+    margin-top: 100px;
+  }
+  .pray-container .know .know-title {
+    width: 50%;
+  }
+
+  .pray-container .know .know-video {
+    /* position: static; */
+    width: 40%;
+    min-height: 400px;
+    left: 50px;
+    top: -50px;
+  }
 }
 
 /* // X-Large devices (large desktops, less than 1400px) */
@@ -461,5 +590,23 @@ td {
   }
   .pray-container .masjid-container .prayer-time {
     width: 100%;
+  }
+  /* know section responsive */
+  .pray-container .know {
+    width: 85%;
+    padding: 20px 20px;
+    /* flex-direction: column-reverse; */
+    margin-top: 100px;
+  }
+  .pray-container .know .know-title {
+    width: 50%;
+  }
+
+  .pray-container .know .know-video {
+    /* position: static; */
+    width: 40%;
+    min-height: 400px;
+    left: 50px;
+    top: -50px;
   }
 }
