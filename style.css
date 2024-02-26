@@ -510,6 +510,131 @@ td {
 .donation .make-donation .users-form button {
   max-width: 150px;
 }
+.footer {
+  width: 100%;
+  margin-top: 50px;
+  background: var(--black);
+}
+.footer .footer-content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-content .logo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #ffff;
+}
+
+.footer .footer-content .logo-content .logo {
+  display: flex;
+  gap: 10px;
+}
+.footer .footer-content .logo-content .logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.footer .footer-content .logo-content .logo h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.footer .footer-content .logo-content p {
+  font-size: 15px;
+  color: #fff;
+}
+.footer .footer-content .logo-content .link {
+  cursor: pointer;
+  display: flex;
+  gap: 20px;
+}
+.footer .footer-content .logo-content .link i {
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  background: #ff9822;
+  padding: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+.footer .footer-content .f-services h3,
+.footer .footer-content .f-usefulLinks h3,
+.footer .footer-content .newlatter h3 {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.footer .footer-content .f-services ul,
+.footer .footer-content .f-usefulLinks ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 20px;
+  list-style-type: none;
+  color: #fff;
+}
+.footer .footer-content .newlatter .subs {
+  position: relative;
+  /* width: 200px; */
+  /* background: #019147; */
+}
+
+.footer .footer-content .newlatter .subs input {
+  max-width: 200px;
+  border: none;
+  outline: none;
+  color: var(--black);
+  font-size: 15px;
+  background: #dfe4e2;
+  border-radius: 5px 0px 0px 5px;
+  padding: 10px 30px;
+}
+.footer .footer-content .newlatter .subs button {
+  width: 100px;
+  border: none;
+  outline: none;
+  color: #ffff;
+  font-size: 15px;
+  background: var(--safron);
+  border-radius: 0px 5px 5px 0px;
+  padding: 10px;
+  position: absolute;
+  left: 170px;
+}
+.footer .footer-content .newlatter p {
+  font-size: 16px;
+  color: #fff;
+  margin: 15px 0;
+}
+.footer .copyright {
+  background: #000;
+  color: var(--gray);
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+.footer .copyright h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer .copyright .privecy {
+  display: flex;
+  gap: 20px;
+}
+.footer .copyright .privecy a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--gray);
+}
 
 /* responsive */
 /* // X-Small devices (portrait phones, less than 576px) */
@@ -629,6 +754,21 @@ td {
   .donation .make-donation .users-form .email-date {
     flex-direction: column;
   }
+
+  /* footer secion responsive */
+  .footer .footer-content {
+    padding: 50px 10px;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .footer .copyright {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 10px;
+    gap: 30px;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -743,6 +883,22 @@ td {
   .donation .make-donation .users-form .email-date {
     justify-content: space-between;
   }
+
+  /* footer secion responsive */
+  .footer .footer-content {
+    padding: 50px 10px;
+    flex-wrap: wrap;
+    gap: 40px;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  .footer .copyright {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 10px;
+    gap: 30px;
+  }
 }
 
 /* // Medium devices (tablets, less than 992px) */
@@ -841,6 +997,21 @@ td {
   }
   .donation .make-donation .users-form .email-date {
     flex-direction: column;
+  }
+  /* footer secion responsive */
+  .footer .footer-content {
+    padding: 50px 10px;
+    flex-wrap: wrap;
+    gap: 40px;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  .footer .copyright {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 10px;
+    gap: 30px;
   }
 }
 
