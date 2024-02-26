@@ -113,6 +113,17 @@
   display: flex;
   justify-content: space-between;
 }
+.pray-container .pray-title .location-search {
+  position: relative;
+}
+.pray-container .pray-title .location-search i {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: var(--safron);
+}
+
 .pray-container .pray-title > h3 {
   font-size: 25px;
   font-weight: 700;
